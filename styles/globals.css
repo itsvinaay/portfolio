@@ -1,16 +1,561 @@
-html,
-body {
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+html {
+  scroll-behavior: smooth;
   padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
+body {
+  padding: 0;
+  margin: 0 auto;
+  background-color: #fafafa;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #484538;
+}
+
+.app-main  {
+  width: 100%;
+  height: 100%;
+}
+
+a{
   color: inherit;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: .2em;
+}
+
+.red {
+  background-color: #ce5374;
+  color: #fafafa;
+}
+
+.yellow {
+  color: #484538;
+  background-color: #ffef9f;
+}
+
+.black {
+  background-color: #484538;
+  color: #fafafa;
+}
+
+.white {
+  color: #484538;
+  background-color: #fafafa;
+}
+
+.container {
+  padding: 5%;
+}
+
+.image {
+  max-width: 100%;
+}
+
+.button {
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.drop-shadow {
+  -webkit-box-shadow: 5px 5px 20px 5px rgba(73,65,65,0.3); 
+  box-shadow: 5px 5px 20px 5px rgba(73,65,65,0.3);
+}
+
+.title {
+  margin: 0;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 160px;
+}
+
+.section-title {
+  margin: 0;
+  padding: 0;
+  font-size: 120px;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 40px;
+  font-family: 'Lobster', cursive;
+}
+
+.initial {
+  font-size: 40px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* ------------------------- NAVBAR ---------------------- */
+
+.icon {
+  font-size: 40px;
+}
+
+.nav-horizontal {
+  padding: 40px;
+  align-items: center;
+}
+
+.link-bank{
+  width: 50%;
+  align-items: center;
+}
+
+.logo {
+  width: 20%;
+  margin: 0 10px;
+}
+
+.navbar-vertical {
+  display: none;
+  text-align: center;
+  padding: 20px;
+}
+
+.navlink {
+  margin: 10px 0;
+}
+
+.navlink-head {
+  font-size: 26px;
+}
+
+@media (max-width: 900px) {
+  .navbar-vertical {
+    display: flex;
+  }
+
+  .nav-horizontal {
+    display: none;
+  }
+}
+
+/* ----------------------- BIO -------------------------- */
+
+.bio-title {
+  line-height: 90%;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.bio-div {
+  width: 90%;
+}
+
+.bio-body {
+  width: 50%;
+}
+
+.bio-text {
+  width: 100%;
+  font-size: 30px;
+  margin: 20px 0;
+  line-height: initial;
+}
+
+.bio-background-1 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    z-index: -2;
+}
+
+@media (min-width: 1201px) {
+  .bio-avatar {
+    background-image: url('/images/avatar.png');
+    height: 430px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    order: 10;
+    width: 40%;
+  }
+
+  .bio-background-1 {
+    height: 110%;
+    width: 450%;
+    position: relative;
+    top: 30px;
+    left: -360%;
+    z-index: -2;
+  }
+}
+
+@media (max-width: 1350px) {
+  .title {
+    font-size: 145px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 140px;
+  }
+
+  .bio-title {
+    width: initial;
+    display: initial;
+  }
+
+  .bio-text {
+    width: 90%;
+  }
+
+  .bio-body {
+    width: 100%;
+  }
+
+  .bio-avatar {
+    background-image: url('/images/avatar.png');
+    height: 330px;
+    width: 330px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    border: 4px solid #fafafa;
+    margin: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .title {
+    font-size: 100px;
+  }
+}
+
+/* -------------------------- PROJECTS ---------------- */
+
+.project-div {
+  margin: 30px 0;
+}
+
+.project-body {
+  padding: 30px;
+  padding-bottom: 50px;
+  margin: 10px;
+  border-radius: 15px;
+  justify-content: space-between;
+}
+
+.project-desc {
+  font-size: 20px;
+  width: 70%;
+  margin-bottom: 50px;
+}
+
+.project-image-div {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border: 5px solid #fafafa;
+  margin: auto;
+}
+
+@media (min-width: 751px) {
+  .project-div {
+    display: flex;
+  }
+
+  .project-body {
+    width: 40%;
+  }
+
+  .project-image-div {
+    width: 40%;
+  }
+}
+
+@media (max-width: 750px) {
+  .project-div {
+    flex-direction: column;
+  }
+
+  .project-body {
+    width: 85%;
+    margin: 30px 0;
+    border: none;
+  }
+
+  .project-image-div {
+    order: -1;
+  }
+}
+
+.potlucky {
+  background-position: left top;
+}
+
+/* ----------------- CALL TO ACTION ---------------- */
+
+.call-to-action-button {
+  width: 20%;
+  font-size: 30px;
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+
+.call-to-action-title {
+  line-height: 90%;
+}
+
+@media (max-width: 950px) {
+  .call-to-action-title {
+    font-size: 80px;
+  }
+
+  .call-to-action-button {
+    width: initial;
+  }
+}
+
+/* ---------------------- ARTWORK ---------------- */
+
+.art-column{
+  width: 600px;
+  height: 1000px;
+  margin: 5px;
+}
+
+.art-item{
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: .5s;
+}
+
+.art-parent {
+  margin-bottom: 10px;
+}
+
+.art-column:hover{
+  width: 900px;
+}
+
+.art-parent:hover{
+  height: 100%;
+  z-index: 2;
+}
+
+.art-small {
+  height: 30%;
+}
+
+.art-medium {
+  height: 40%;
+}
+
+.art-tall {
+  height: 60%;
+}
+
+.art-extra-tall {
+  height: 70%;
+}
+
+.animate-fade-1 {
+  height: 100%;
+  width: 100%;
+}
+
+.animate-fade-2 {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 950px) {
+  .artwork-title {
+    font-size: 110px;
+  }
+  .art-column {
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+  }
+
+  .artwork-grid {
+    flex-direction: column;
+  }
+
+  .art-item {
+    height: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .artwork-grid{
+    width: 100%;
+  }
+
+  .art-column {
+    display: initial;
+    height: fit-content;
+  }
+
+  .art-small {
+    height: 50vh;
+  }
+  
+  .art-medium {
+    height: 60vh;
+  }
+  
+  .art-tall {
+    height: 80vh;
+  }
+  
+  .art-extra-tall {
+    height: 100vh;
+  }
+
+  .art-item {
+    display: block;
+  }
+
+  .art-parent{
+    pointer-events: none;
+  }
+}
+
+/* ---------------------- ARTWORK FADE ------------ */
+
+@keyframes animate-second {
+  0% { opacity: 0; }
+  30% { opacity: 0; }
+  33% { opacity: 1; }
+  97% { opacity: 1; }
+  100% { opacity:0; }
+}
+
+@keyframes animate-third {
+  0% { opacity: 0; }
+  63% { opacity: 0; }
+  66% { opacity: 1; }
+  97% { opacity: 1; }
+  100% { opacity:0; }
+}
+
+.animate-fade-1 {
+  animation-name: animate-second;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+.animate-fade-2 {
+  animation-name: animate-third;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+.delay-1 {
+  animation-delay: 2s;
+}
+
+.delay-2 {
+  animation-delay: 4s;
+}
+
+/* ------------------ RESUME -------------------- */
+
+.resume-body-column {
+  width: 50%;
+}
+
+.resume-list {
+  font-size: 18px;
+}
+
+.resume-list-title {
+  font-weight: bolder;
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.list-subtitle {
+  margin: 10px 0;
+  font-style: italic;
+}
+
+.resume-list-item {
+  margin: 5px 25px;
+}
+
+.logo-big {
+  margin: 10px;
+  text-align: center;
+  max-height: 95px;
+}
+
+.skill-section {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 750px) {
+  .resume-body {
+    display: block;
+  }
+
+  .resume-body-column {
+    width: 100%;
+  }
+}
+
+/* -------------------- CONTACT -------------------- */
+
+.contact-form {
+  width: 100%;
+  font-size: 20px;
+}
+
+.contact-field {
+  width: 50%;
+  height: 30px;
+  border-radius: 15px;
+}
+
+.contact-textarea {
+  height: 200px;
+}
+
+.contact-submit {
+  border: none;
+  font-size: 20px;
+}
+
+@media (max-width: 1000px) {
+  .contact-field {
+    width: 100%;
+  }
 }
