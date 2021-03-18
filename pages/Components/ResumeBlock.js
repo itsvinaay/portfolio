@@ -1,10 +1,10 @@
 export default function Resume(props) {
 
-    let items = props.items.map(item => {
-        return <li className='resume-list-item'>
+    let items = props.items ? props.items.map((item, index) => {
+        return <li className='resume-list-item' key={`resume-${index}`}>
                     {item}
                 </li>
-    })
+    }) : null
     return (
         <div className='resume-list container'>
             <div className='resume-list-title'>{props.title}</div>

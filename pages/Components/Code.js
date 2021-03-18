@@ -12,6 +12,7 @@ export default function Code(props) {
           desc="An exploration of planetary objects in the Solar System (Including Pluto!), using the MERN tech stack and a decoupled app structure."
           index='0'
           image='/images/sunvoyage.png'
+          key='project-0'
         />,
         < Project
           title='Potlucky'
@@ -22,6 +23,7 @@ export default function Code(props) {
           index='1'
           image='/images/potlucky.png'
           special='potlucky'
+          key='project-1'
         />,
         < Project
           title='Spell Checkers'
@@ -31,6 +33,7 @@ export default function Code(props) {
           desc="A typing game/dungeon crawler crossover, purely made with Javascript and Canvas. Fix typos! Type fast! Escape the editing process!"
           index='2'
           image='/images/spellcheckers.png'
+          key='project-2'
         />
     ]
 

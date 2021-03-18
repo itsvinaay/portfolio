@@ -13,6 +13,7 @@ export default function Resume() {
                 <div className='resume-body-column edu-column'>
                     <h3 className='subtitle'>Education</h3>
                     < ResumeBlock 
+                      key='edu-0'
                       title='Software Engineering Immersive'
                       subtitle='General Assembly'
                       titleDate='Dec 2020.....March 2021'
@@ -23,6 +24,7 @@ export default function Resume() {
                     />
                     
                     < ResumeBlock 
+                        key='edu-1'
                         title='Bachelors of the Arts in English'
                         subtitle='University of Houston'
                         titleDate='Aug 2013.....May 2018'
@@ -35,6 +37,7 @@ export default function Resume() {
                 <div className='resume-body-column employment-column'>
                     <h3 className='subtitle'>Employment</h3>
                     < ResumeBlock 
+                        key='job-0'
                         title='Robotic Process Automation Developer'
                         titleDate='Jan 2020.....Oct 2020'
                         subtitle='Delta General Insurance Agency'
@@ -47,6 +50,7 @@ export default function Resume() {
                         ]}
                     />
                     < ResumeBlock 
+                        key='job-1'
                         title='Customer Service Representative'
                         titleDate='Aug 2018.....Oct 2019'
                         subtitle='Tobin Center for the Performing Arts'
@@ -109,21 +113,7 @@ export default function Resume() {
                         src='/images/illustrator.png'
                         alt='Illustrator'
                     />
-                        {/* < ResumeBlock
-                            className='resume-skills-list'
-                            items = {[
-                                'Javascript', 'React', 'Postgres', 'SQL', 'MongoDB',
-                                'Express'
-                            ]}
-                        />
-                        < ResumeBlock 
-                            className='resume-skills-list'
-                            items = {[
-                                'Node', 'Socket.io', 'CSS', 'Photoshop',
-                                'Illustrator'
-                            ]}
-                        /> */}
-                    </div>
+                </div>
             </div>
         </div>
     </div>

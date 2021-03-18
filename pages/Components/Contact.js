@@ -6,17 +6,17 @@ export default function Contact() {
                 <input type='hidden' name='form-name' value='contact' />
                 
                 <p>
-                    <label for='name'>Name</label>
+                    <label htmlFor='name'>Name</label>
                     <input className='contact-field' type='text' id='name' name='name'></input>
                 </p>
             
                 <p>
-                    <label for='email'>Email</label>
+                    <label htmlFor='email'>Email</label>
                     <input className='contact-field' type='text' id='email' name='email'></input>
                 </p>
 
                 <p>
-                    <label  for='message'>Message</label>
+                    <label  htmlFor='message'>Message</label>
                     <textarea className='contact-field contact-textarea' id='message' name='message'></textarea>
                 </p>
 
