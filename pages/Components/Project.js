@@ -12,8 +12,8 @@ export default function Project(props) {
                 <h2 className='project-title subtitle'>{props.title}</h2>
                 <p className='project-desc'>{props.desc}</p>
                 <div className='link-bank'>
-                    <span className='project-link button red'><Link href={props.demo_url}>DEMO</Link></span>
-                    <span className='project-link button red'><Link href={props.code_url}>CODE</Link></span>
+                    <span className='project-link button red'><Link href={props.demo_url ? props.demo_url : null}>DEMO</Link></span>
+                    <span className='project-link button red'><Link href={props.code_url ? props.code_url : null}>CODE</Link></span>
                 </div>
             </div>
         </div>
@@ -25,8 +25,8 @@ export default function Project(props) {
                 <h2 className='project-title subtitle'>{props.title}</h2>
                 <p className='project-desc'>{props.desc}</p>
                 <div className='link-bank'>
-                    <span className='project-link button red'><Link href={props.demo_url}>DEMO</Link></span>
-                    <span className='project-link button red'><Link href={props.code_url}>CODE</Link></span>
+                    <span className='project-link button red'><Link href={props.demo_url ? props.demo_url : null}>DEMO</Link></span>
+                    <span className='project-link button red'><Link href={props.code_url ? props.code_url : null}>CODE</Link></span>
                 </div>
             </div>
 
