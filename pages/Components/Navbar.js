@@ -132,6 +132,11 @@ export default function Navbar() {
                 </ Link >
                 </span>
                 <span className='navlink hidden'>
+                < Link href='https://pyromanticarts.itch.io/' target="_blank" scroll={false} className='navlink'>
+                ITCH.IO
+                </ Link >
+                </span>
+                <span className='navlink hidden'>
                 < Link href='#contact' scroll={false} className='navlink'>
                 CONTACT
                 </ Link >

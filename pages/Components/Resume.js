@@ -6,12 +6,15 @@ export default function Resume() {
     return (
         <div className='container yellow' id='resume'>
             <div>
-            <h1 className='section-title'>Resume</h1>
+            <div className='flex flex-wrap'>
+                <h1 className='section-title'>Resume</h1>
+                <a className='button resume-button red' href='/elyssa-winch-resume.pdf' download>Click to download</a>
+            </div>
                     
             <div className='resume-body flex'>
                 
                 <div className='resume-body-column edu-column'>
-                    <h3 className='subtitle'>Education</h3>
+                    <h3 className='subtitle resume-subtitle'>Education</h3>
                     < ResumeBlock 
                       key='edu-0'
                       title='Software Engineering Immersive'
@@ -35,7 +38,7 @@ export default function Resume() {
                     />
                 </div>
                 <div className='resume-body-column employment-column'>
-                    <h3 className='subtitle'>Employment</h3>
+                    <h3 className='subtitle resume-subtitle'>Employment</h3>
                     < ResumeBlock 
                         key='job-0'
                         title='Robotic Process Automation Developer'
@@ -66,7 +69,7 @@ export default function Resume() {
                 </div>
             </div>
             <div >
-                    <h3 className='subtitle'>Skills</h3>
+                    <h3 className='subtitle resume-subtitle'>Skills</h3>
                     <div className='flex-row skill-section'>
                     < LogoBig 
                         src='/images/javascript.png'

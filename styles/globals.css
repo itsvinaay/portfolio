@@ -108,6 +108,9 @@ label {
   margin: 0;
   font-size: 40px;
   font-family: 'Lobster', cursive;
+  
+  width: fit-content;
+  border-bottom: 4px solid #484538;
 }
 
 .big-text {
@@ -126,7 +129,7 @@ label {
 }
 
 .nav-horizontal {
-  padding: 40px;
+  padding: 40px 5%;
   align-items: center;
 }
 
@@ -352,6 +355,7 @@ label {
   width: 600px;
   height: 1000px;
   margin: 5px;
+  transition: .5s;
 }
 
 .art-item{
@@ -366,7 +370,7 @@ label {
 }
 
 .art-column:hover{
-  width: 900px;
+  width: 80%;
 }
 
 .art-parent:hover{
@@ -502,6 +506,18 @@ label {
   font-size: 18px;
 }
 
+.resume-button {
+  align-self: flex-end;
+  font-size: 20px;
+  margin: 35px;
+  max-height: 20px;
+}
+
+.resume-subtitle {
+  width: fit-content;
+  border-bottom: 4px solid #484538;
+}
+
 .resume-list-title {
   font-weight: bolder;
   margin: 10px 0;
@@ -511,6 +527,7 @@ label {
 .list-subtitle {
   margin: 10px 0;
   font-style: italic;
+  border-bottom: 2px solid #484538;
 }
 
 .resume-list-item {
