@@ -71,6 +71,11 @@ label {
   display: flex;
 }
 
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .flex-row {
   display: flex;
   justify-content: space-between;
@@ -105,8 +110,8 @@ label {
   font-family: 'Lobster', cursive;
 }
 
-.initial {
-  font-size: 40px;
+.big-text {
+  font-size: 30px;
 }
 
 .hidden {
