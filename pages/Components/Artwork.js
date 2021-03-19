@@ -55,7 +55,7 @@ export default function Artwork(props) {
 
                     < ArtSingle 
                         image1='/images/CCPosterSmall.png'
-                        image2='/images/Crowe.png'
+                        image2='/images/pixel.jpg'
                         image3='/images/SlimeRancher.png'
                         size='extra-tall'
                         delay=''
