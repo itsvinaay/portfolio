@@ -1,10 +1,24 @@
-import Logo from './Logo'
+import Image from 'next/image'
+import React from 'react'
 import { useState } from 'react'
 import Link from 'next/link'
 
 export default function Navbar() {
 
     const [dropdown, setDropdown] = useState(false)
+
+    const Logo = (props) => {
+        return (
+            <span className='logo'>
+                    <Image
+                        src={props.src}
+                        height={40} 
+                        width={40} 
+                        alt={props.alt}
+                    />
+            </span>
+        )
+    }
 
     if (dropdown) {
         return (
@@ -68,16 +82,22 @@ export default function Navbar() {
                 </ Link >
             </span>
 
-            <li className='logo-bank'>
-                < Logo 
-                    src='/images/linkedin.png'
-                    alt='Linkedin link'
-                />
-                < Logo 
-                    src='/images/github.png'
-                    alt='Github link'
-                />
-            </li>
+            <div>
+                <a href='https://www.linkedin.com/in/elyssa-winch/' target="_blank">
+                        < Logo 
+                            src='/images/linkedin.png'
+                            alt='Linkedin link'
+                        />
+                </a>
+
+                
+                <a href='https://github.com/ElyssaW' target="_blank">
+                        < Logo 
+                            src='/images/github.png'
+                            alt='Github link'
+                        />
+                </a>
+            </div>
         </ul>
 
 
@@ -102,12 +122,12 @@ export default function Navbar() {
                 </ Link >
                 </span>
                 <span className='navlink hidden'>
-                < Link href='#contact' scroll={false} className='navlink'>
+                < Link href='https://github.com/ElyssaW' target="_blank" scroll={false} className='navlink'>
                 GITHUB
                 </ Link >
                 </span>
                 <span className='navlink hidden'>
-                < Link href='#contact' scroll={false} className='navlink'>
+                < Link href='https://www.linkedin.com/in/elyssa-winch/' target="_blank" scroll={false} className='navlink'>
                 LINKEDIN
                 </ Link >
                 </span>

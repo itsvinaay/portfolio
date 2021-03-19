@@ -12,8 +12,8 @@ export default function Project(props) {
                 <h2 className='project-title subtitle'>{props.title}</h2>
                 <p className='project-desc'>{props.desc}</p>
                 <div className='link-bank'>
-                    <span className='project-link button red'><Link href={props.demo_url ? props.demo_url : 'https://github.com/ElyssaW'}>DEMO</Link></span>
-                    <span className='project-link button red'><Link href={props.code_url ? props.code_url : 'https://github.com/ElyssaW'}>CODE</Link></span>
+                    <a href={props.demo_url ? props.demo_url : 'https://github.com/ElyssaW'} className='project-link button red' target="_blank">DEMO</a>
+                    <a href={props.code_url ? props.code_url : 'https://github.com/ElyssaW'} className='project-link button red' target="_blank">CODE</a>
                 </div>
             </div>
         </div>
@@ -25,8 +25,8 @@ export default function Project(props) {
                 <h2 className='project-title subtitle'>{props.title}</h2>
                 <p className='project-desc'>{props.desc}</p>
                 <div className='link-bank'>
-                    <span className='project-link button red'><Link href={props.demo_url ? props.demo_url : 'https://github.com/ElyssaW'}>DEMO</Link></span>
-                    <span className='project-link button red'><Link href={props.code_url ? props.code_url : 'https://github.com/ElyssaW'}>CODE</Link></span>
+                    <a href={props.demo_url ? props.demo_url : 'https://github.com/ElyssaW'} className='project-link button red' target="_blank">DEMO</a>
+                    <a href={props.code_url ? props.code_url : 'https://github.com/ElyssaW'} className='project-link button red' target="_blank">CODE</a>
                 </div>
             </div>
 
