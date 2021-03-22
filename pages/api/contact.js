@@ -35,7 +35,7 @@ export default function (req, res) {
         subject: `Thanks for the message, ${req.body.name}!`,
         text: 'Hello, I am Winchbot! You sent a message through the Contact form on Elyssa Winch\'s portfolio, and she instructed me to say thanks! Your message has been received, and you should get a reply soon from ejwinch1@gmail.com. Beep boop, Winchbot out.',
         html: 
-        '<div><h3>Hello, I am Winchbot!<p>You sent a message through the Contact form on <a href="https://elyssa-winch.herokuapp.com/">Elyssa Winch\'s portfolio,</a> and she instructed me to say thanks! Your message has been received, and you should get a reply soon from ejwinch1@gmail.com. Meanwhile, check out Elyssa\'s <a href="https://www.linkedin.com/in/elyssa-winch/">Linkedin</a> and <a href="https://github.com/ElyssaW">Github!</a></p><p>Beep boop, Winchbot out.</p></h3></div>'
+        '<div><h3>Hello, I am Winchbot!</h3><p>You sent a message through the Contact form on <a href="https://elyssa-winch.herokuapp.com/">Elyssa Winch\'s portfolio,</a> and she instructed me to say thanks! Your message has been received, and you should get a reply soon from ejwinch1@gmail.com. Meanwhile, check out Elyssa\'s <a href="https://www.linkedin.com/in/elyssa-winch/">Linkedin</a> and <a href="https://github.com/ElyssaW">Github!</a></p><p><h3>Beep boop, Winchbot out.</p></h3></div>'
     }
 
     transporter.sendMail(mailDataReply, function (err, info) {
