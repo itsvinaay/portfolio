@@ -8,7 +8,7 @@ export default function Resume() {
             <div>
             <div className='flex flex-wrap'>
                 <h1 className='section-title'>Resume</h1>
-                <a className='button resume-button red' href='/elyssa-winch-resume.pdf' download>Click to download</a>
+                <a className='button resume-button dark red' href='/elyssa-winch-resume.pdf' download>Click to download</a>
             </div>
                     
             <div className='resume-body flex'>

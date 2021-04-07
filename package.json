@@ -6,9 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p $PORT",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "start": "next start -p $PORT"
   },
   "dependencies": {
     "-": "^0.0.1",

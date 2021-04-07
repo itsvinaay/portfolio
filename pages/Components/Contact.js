@@ -71,7 +71,7 @@ export default function Contact() {
                     <textarea className='contact-field contact-textarea' onChange={(e)=>{setBody(e.target.value)}} value={body} id='message' name='message'></textarea>
                 </p>
 
-                < input className='contact-submit button red' onClick={(e)=>{submitForm(e)}} type='submit' value='Send' /> { submitted ? <span className='subtitle'> Thanks for the message! </span> : null }
+                < input className='contact-submit light button red' onClick={(e)=>{submitForm(e)}} type='submit' value='Send' /> { submitted ? <span className='subtitle'> Thanks for the message! </span> : null }
             </form>
         </div>
     )

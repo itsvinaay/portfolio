@@ -22,6 +22,7 @@ export default function Navbar() {
 
     if (dropdown) {
         return (
+        <div className='navbar-container'>
         < ul className='navbar navbar-vertical black flex-column' >
             <span onClick={()=>{setDropdown(!dropdown)}} className='navlink-head'>
                 ELYSSA
@@ -39,7 +40,7 @@ export default function Navbar() {
                 </span>
                 <span className='navlink'>
                 < Link href='#resume' scroll={false} className='navlink'>
-                ABOUT
+                RESUME
                 </ Link >
                 </span>
                 <span className='navlink'>
@@ -58,11 +59,12 @@ export default function Navbar() {
                 </ Link >
             </span>
         </ul>
+        </div>
         )
     } 
 
     return (
-        <>
+        <div className='navbar-container'>
         < ul className='navbar black flex-row nav-horizontal' >
             <span className='link-bank flex-row'>
                 < Link href='#bio' scroll={false}>
@@ -118,7 +120,7 @@ export default function Navbar() {
                 </span>
                 <span className='navlink hidden'>
                 < Link href='#resume' scroll={false} className='navlink'>
-                ABOUT
+                RESUME
                 </ Link >
                 </span>
                 <span className='navlink hidden'>
@@ -142,6 +144,6 @@ export default function Navbar() {
                 </ Link >
             </span>
         </ul>
-        </>
+        </div>
     )
 }
