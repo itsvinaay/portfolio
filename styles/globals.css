@@ -198,7 +198,7 @@ label {
 }
 
 .bio-body {
-  width: 50%;
+  width: 60%;
 }
 
 .bio-text {
@@ -220,10 +220,10 @@ label {
 
 @media (min-width: 1201px) {
   .bio-avatar {
-    background-image: url('/images/avatar.png');
+    background-image: url('/images/me.png');
     height: 430px;
     background-position: center;
-    background-size: 100%;
+    background-size: 60%;
     background-repeat: no-repeat;
     border-radius: 15px;
     order: 10;
@@ -265,11 +265,11 @@ label {
   }
 
   .bio-avatar {
-    background-image: url('/images/avatar.png');
+    background-image: url('/images/me.png');
     height: 330px;
     width: 330px;
     background-position: center;
-    background-size: 100%;
+    background-size: 50%;
     background-repeat: no-repeat;
     border-radius: 15px;
     border: 4px solid #fafafa;

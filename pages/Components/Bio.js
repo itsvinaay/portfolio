@@ -5,7 +5,9 @@ export default function Bio() {
         <div className='bio-div container' id='bio'>
             <div className='title bio-title flex'>
                 <div className='bio-avatar image'>
-                    <div className='bio-background-1 yellow'></div>
+                    <div className='bio-background-1 yellow'>
+                        
+                    </div>
                 </div>
                 <div className='bio-body'>
                     <div className='title-body'>
