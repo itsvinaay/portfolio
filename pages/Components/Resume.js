@@ -87,6 +87,18 @@ export default function Resume() {
                         src='/images/react.png'
                         alt='React'
                     />
+                    < LogoBig  
+                        src='/images/vue.png'
+                        alt='Vue'
+                    />
+                    < LogoBig  
+                        src='/images/bootstrap.png'
+                        alt='Bootstrap'
+                    />
+                    < LogoBig  
+                        src='/images/graphql.png'
+                        alt='GraphQL'
+                    />
                     < LogoBig 
                         src='/images/node.png'
                         alt='Node'
