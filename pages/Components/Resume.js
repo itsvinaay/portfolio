@@ -84,6 +84,10 @@ export default function Resume() {
                         alt='UiPath'
                     />
                     < LogoBig 
+                        src='/images/typescript.png'
+                        alt='Typescript'
+                    />
+                    < LogoBig 
                         src='/images/react.png'
                         alt='React'
                     />
@@ -119,6 +123,10 @@ export default function Resume() {
                     < LogoBig 
                         src='/images/python.png'
                         alt='Python'
+                    />
+                    < LogoBig 
+                        src='/images/heroku.png'
+                        alt='Heroku'
                     />
                     < LogoBig  
                         src='/images/photoshop.png'

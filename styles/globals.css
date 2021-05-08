@@ -220,14 +220,14 @@ label {
 
 @media (min-width: 1201px) {
   .bio-avatar {
-    background-image: url('/images/me.png');
+    background-image: url('/images/avatar.png');
     height: 430px;
     background-position: center;
-    background-size: 60%;
+    background-size: 70%;
     background-repeat: no-repeat;
     border-radius: 15px;
     order: 10;
-    width: 40%;
+    width: 80%;
   }
 
   .bio-background-1 {
@@ -433,8 +433,9 @@ label {
 }
 
 .about-me{
-  font-size: 20px;
-  width: 40%;
+  font-size: 22px;
+  line-height: 34px;
+  width: 80%;
 }
 
 @media (max-width: 950px) {
