@@ -682,6 +682,10 @@ label {
   height: 200px;
 }
 
+.contact-submit-field {
+  width: 50%;
+}
+
 .contact-submit {
   border: none;
   font-size: 20px;
