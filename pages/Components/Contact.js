@@ -6,6 +6,7 @@ export default function Contact() {
     const [email, setEmail] = useState('')
     const [body, setBody] = useState('')
     const [submitted, setSubmitted] = useState(false)
+    const [submittedMsg, setSubmittedMsg] = useState('Please fill out all forms of the field')
 
     const submitForm = (e) => {
         e.preventDefault()
@@ -29,13 +30,15 @@ export default function Contact() {
                 console.log('Response received')
                 if (res.status === 200) {
                     console.log('Response succeeded!')
-                    setSubmitted(true) 
                     setName('')
                     setEmail('')
                     setBody('')
+                    setSubmittedMsg('Thanks for the message!')
                 }
             })
         }
+
+        setSubmitted(true) 
     }
 
     return (
@@ -73,7 +76,7 @@ export default function Contact() {
                     <textarea className='contact-field contact-textarea' onChange={(e)=>{setBody(e.target.value)}} value={body} id='message' name='message'></textarea>
                 </p>
 
-                < input className='contact-submit light button red' onClick={(e)=>{submitForm(e)}} type='submit' value='Send' /> { submitted ? <span className='subtitle'> Thanks for the message! </span> : null }
+                < input className='contact-submit light button red' onClick={(e)=>{submitForm(e)}} type='submit' value='Send' /> { submitted ? <span className='subtitle'> {submittedMsg} </span> : null }
             </form>
         </div>
     )
