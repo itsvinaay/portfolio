@@ -6,7 +6,7 @@ export default function Contact() {
     const [email, setEmail] = useState('')
     const [body, setBody] = useState('')
     const [submitted, setSubmitted] = useState(false)
-    const [submittedMsg, setSubmittedMsg] = useState('Please fill out all forms of the field')
+    const [submittedMsg, setSubmittedMsg] = useState('Please fill out all fields of the form')
 
     const submitForm = (e) => {
         e.preventDefault()

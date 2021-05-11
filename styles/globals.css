@@ -695,4 +695,8 @@ label {
   .contact-field {
     width: 100%;
   }
+
+  .contact-submit-field {
+    width: 100%;
+  }
 }
