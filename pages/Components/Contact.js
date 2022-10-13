@@ -47,15 +47,15 @@ export default function Contact() {
             <div className='flex-row flex-wrap'>
                 <p>
                     <span className='subtitle'>Email: </span> 
-                    <span className='big-text'>elyssajwinch@gmail.com</span> 
+                    <span className='big-text'>itsvinaay@gmail.com</span> 
                 </p>
                 <p>
                     <span className='subtitle'>Phone: </span>
-                    <span className='big-text'>210-501-2251</span>
+                    <span className='big-text'>+91-8827741333</span>
                 </p>
                 <p>
                     <span className='subtitle'>Located: </span>
-                    <span className='big-text'>San Antonio, Texas</span>
+                    <span className='big-text'>Indore, India</span>
                 </p>
             </div>
             < form className='contact-form' name="contact" method='POST' data-netlify='true'>
